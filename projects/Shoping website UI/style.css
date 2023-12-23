@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+
+}
+.nav-bar{
+    display: flex;
+    margin-top: 20px;
+}
+.logo{
+    width: 200px;
+    height: 50px;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 0 0 20px;
+}
+.nav{
+    margin: 35px 0 0 3%;
+}
+.nav li{
+    display: inline;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-left: 30px;
+    font-weight: 550;
+    font-family: sans-serif;
+}
+.navicon{
+    margin: 35px 0 0 41%;
+    cursor: pointer;
+}
+.navicon div{
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.container{
+    display: inline-flex;
+}
+.info{
+    margin: 5% 0 0 230px;
+
+}
+
+.info h1{
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    color: dodgerblue;
+}
+.info .min{
+    display: none;
+}
+.info h3{
+    font-family: monospace;
+    font-size: 2em;
+    color: orange;
+}
+.info img{
+    position: relative;
+    left: -30px;
+
+}
+.info button{
+    padding: 15px 30px;
+    outline: none;
+    background: none;
+    border-radius: 30px;
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.product img{
+    width: 27vw;
+    height: 28vw;
+    margin: 69px 0 0 20%;
+}
+.empty::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 500px;
+    height: 580px;
+    background-color: dodgerblue;
+    z-index: -1;
+}
+.icon{
+    margin: 0 0 0 75%;
+}
+.icon i{
+    margin-left: 50px;
+    color: #ffffff;
+}
+.optional{
+    margin: 50px 0 0 57%;
+}
+.optional h3{
+    display: inline;
+    margin-left: 100px;
+    font-family: sans-serif;
+    font-size: 17px;
+    color: dodgerblue;
+}
+.mail::after{
+    content: '';
+    position: absolute;
+    margin: 10px 0 0 25px;
+    width: 60px;
+    height: 1px;
+    background-color: dodgerblue;
+}
+
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+ 
+    .empty::before{
+        content:'';
+        position:absolute;
+        right:0px;
+        top:0px;  
+        width:100%;
+        height:100px;
+        background-color:dodgerblue;    
+        z-index:-1; 
+     }
+    .nav li{
+     display:none; 
+    }
+    
+    .navicon {
+    
+        margin:25px 0 0 30%;
+    }
+    .container {   
+     display:block; 
+    }
+    .info{
+       margin:25% 0 0 60px; 
+    }
+     .optional{
+      margin:50px 0 0 0;  
+     }
+     .optional h3{
+       font-size:15px;  
+     }
+     .optional h3:nth-child(1){
+      margin-left:10px; 
+       
+    }
+    
+    .info .min{
+     display:block;
+     width:300px;
+     height:300px;  
+     position:relative;
+     left:8px;    
+    }
+    
+    .info button{
+        margin-top:20px;      
+    }
+    .product img{
+     display:none;  
+    }
+    
+    .icon{
+     margin:-37px 0 0 190px;
+    }
+    .icon i{
+     color:#000000;  
+    
+     margin-left:30px;
+    }
+    .logo{
+       background-image: url(logo.png);
+        background-repeat:  no-repeat;
+        background-size:contain;
+        cursor: pointer;  
+    }
+    
+    }
+
+    @media only screen and (min-width: 1200px) {
+
+        .empty::before{ 
+         width:800px;
+         height:780px;
+         }
+        .nav li{
+          display:inline;
+        }
+        .nav li:nth-child(4){
+          display:inline;  
+        }
+        
+        .navicon {
+         margin:35px 0 0 41%;
+        }
+        .container {   
+         display:inline-flex; 
+        }
+        .info{
+            margin:5% 0 0 250px; 
+        }
+         .optional{
+          margin:50px 0 0 54%; 
+         }
+         .optional h3{
+           display:inline; 
+           font-size:17px;  
+            margin-left:100px;
+            color: white;
+         }
+        
+        
+        .info .min{
+         display:none; 
+        }
+        
+        .info h1{
+         font-family:sans-serif; 
+            font-size:2.5em;
+            color:dodgerblue;  
+        
+        }
+        
+        .product img{
+         display:block;
+        }
+        /* .empty{
+            display: none;
+        } */
+        
+        .icon{
+         margin:-10px 0 0 75%;
+        }
+        .icon i{
+         color:#000000;  
+         margin-left:50px;
+        }
+        .logo{
+            background-image: url(logo.png);
+            background-repeat:  no-repeat;
+            background-size:contain;  
+        }
+       
+        } 
+        
